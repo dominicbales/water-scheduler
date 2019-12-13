@@ -13,18 +13,10 @@ import BigCalendar from "./big.calendar.component";
 describe("App component", () => {
   let wrapper;
   let bigCalendarCrash;
-  const mockSetState = jest.fn();
-
-  jest.mock("react", () => ({
-    ...jest.requireActual("react"),
-    useState: value => [true, mockSetState]
-  }));
 
   beforeEach(() => {
     bigCalendarCrash = <BigCalendar events={mockEmptyEvents} />;
-
     wrapper = shallow(<BigCalendarContainer sortedPlants={mockSortedPlants} />);
-    console.log("wrapper:", wrapper);
   });
 
   // Makes sure BigCalendarContainer component is render and BigCalendar component crashes

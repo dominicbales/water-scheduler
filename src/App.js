@@ -9,18 +9,6 @@ import { sortPlantsByWateringDate } from "./helpers/plant-helper";
 // Import styles
 import "./App.css";
 
-// Adding addDays function to Date prototype
-Date.prototype.addDays = function(days) {
-  this.setDate(this.getDate() + parseInt(days));
-  return this;
-};
-
-// Adding subtractDays function to Date prototype
-Date.prototype.subtractDays = function(days) {
-  this.setDate(this.getDate() - parseInt(days));
-  return this;
-};
-
 function App() {
   const [sortedPlants] = useState(sortPlantsByWateringDate(plants));
   return (

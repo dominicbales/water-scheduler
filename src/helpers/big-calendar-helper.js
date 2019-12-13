@@ -1,7 +1,9 @@
 import { extractNumberFromString } from "../helpers/plant-helper";
+import { addDays, subtractDays } from "./date-helpers";
 const uuidv4 = require("uuid/v4");
 
 export const createCalendarDateObject = sortedPlants => {
+  console.log("inside create calendar date object");
   const datesObj = {};
   let dayNum = 0;
   let tempDate = null;
@@ -26,7 +28,7 @@ export const createCalendarDateObject = sortedPlants => {
         }
       } else {
         if (datesObj[val]) {
-          tempDate.addDays(dayNum);
+          tempDate = addDays(tempDate, dayNum);
 
           // makes sure we dont go past the endDate
           if (tempDate > endDate) {
@@ -37,9 +39,9 @@ export const createCalendarDateObject = sortedPlants => {
           // subtract a day if its Saturday
           // add a day if its Sunday
           if (tempDate.getDay() === 6) {
-            tempDate.subtractDays(1);
+            tempDate = subtractDays(tempDate, 1);
           } else if (tempDate.getDay() === 0) {
-            tempDate.addDays(1);
+            tempDate = addDays(tempDate, 1);
           }
 
           let dateObjStructure = {
