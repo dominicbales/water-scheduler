@@ -1,0 +1,133 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App component renders App component but big calendar component crashes 1`] = `
+<div
+  className="App"
+>
+  <Welcome />
+  <BigCalendarContainer
+    sortedPlants={
+      Object {
+        "14 days": Array [
+          Object {
+            "name": "Snake Plant",
+            "water_after": "14 days",
+          },
+          Object {
+            "name": "Money Tree",
+            "water_after": "14 days",
+          },
+          Object {
+            "name": "Dracaena",
+            "water_after": "14 days",
+          },
+          Object {
+            "name": "Jade",
+            "water_after": "14 days",
+          },
+        ],
+        "2 days": Array [
+          Object {
+            "name": "Wavy Fern",
+            "water_after": "2 days",
+          },
+        ],
+        "3 days": Array [
+          Object {
+            "name": "Bird's Nest Fern",
+            "water_after": "3 days",
+          },
+          Object {
+            "name": "Bell Pepper Plant",
+            "water_after": "3 days",
+          },
+          Object {
+            "name": "Strawberry Plant",
+            "water_after": "3 days",
+          },
+        ],
+        "7 days": Array [
+          Object {
+            "name": "Fiddle Leaf Fig",
+            "water_after": "7 days",
+          },
+          Object {
+            "name": "Croton",
+            "water_after": "7 days",
+          },
+          Object {
+            "name": "Spider Plant",
+            "water_after": "7 days",
+          },
+        ],
+      }
+    }
+  />
+</div>
+`;
+
+exports[`App component renders App component without crashing 1`] = `
+<div
+  className="App"
+>
+  <Welcome />
+  <BigCalendarContainer
+    sortedPlants={
+      Object {
+        "14 days": Array [
+          Object {
+            "name": "Snake Plant",
+            "water_after": "14 days",
+          },
+          Object {
+            "name": "Money Tree",
+            "water_after": "14 days",
+          },
+          Object {
+            "name": "Dracaena",
+            "water_after": "14 days",
+          },
+          Object {
+            "name": "Jade",
+            "water_after": "14 days",
+          },
+        ],
+        "2 days": Array [
+          Object {
+            "name": "Wavy Fern",
+            "water_after": "2 days",
+          },
+        ],
+        "3 days": Array [
+          Object {
+            "name": "Bird's Nest Fern",
+            "water_after": "3 days",
+          },
+          Object {
+            "name": "Bell Pepper Plant",
+            "water_after": "3 days",
+          },
+          Object {
+            "name": "Strawberry Plant",
+            "water_after": "3 days",
+          },
+        ],
+        "7 days": Array [
+          Object {
+            "name": "Fiddle Leaf Fig",
+            "water_after": "7 days",
+          },
+          Object {
+            "name": "Croton",
+            "water_after": "7 days",
+          },
+          Object {
+            "name": "Spider Plant",
+            "water_after": "7 days",
+          },
+        ],
+      }
+    }
+  />
+</div>
+`;

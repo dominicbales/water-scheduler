@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Welcome component renders App component without crashing 1`] = `
+<div
+  className="welcome-container"
+>
+  <h1>
+    Welcome to Tandem Watering Scheduler
+  </h1>
+  <p>
+    Tandem Watering Scheduler is an application that helps you keep track of when your plants need watering
+  </p>
+</div>
+`;

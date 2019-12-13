@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App component renders BigCalendarContainer component but big calendar component crashes 1`] = `
+<div>
+  <div>
+    Calendar component couldn't be render
+  </div>
+</div>
+`;
+
+exports[`App component renders BigCalendarContainer component without crashing 1`] = `
+<div>
+  <div>
+    Calendar component couldn't be render
+  </div>
+</div>
+`;
