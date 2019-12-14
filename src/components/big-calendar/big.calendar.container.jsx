@@ -12,7 +12,7 @@ const BigCalendarContainer = ({ sortedPlants }) => {
   useEffect(() => {
     (async () => {
       try {
-        // construct big-calendar events data structure
+        // create event data structure for BigCalendar
         const dates = await createCalendarDateObject(sortedPlants);
         setEvents(await createCalendarEventArray(sortedPlants, dates));
       } catch (error) {

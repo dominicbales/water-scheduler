@@ -2,13 +2,35 @@
 }
 body,
 html,
-#root,
-.App {
+#root {
   height: 100%;
 }
 
 .App {
+  min-height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+}
+
+.app-selection-container {
+  margin: 0 auto;
+}
+
+.app-button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.app-button-styles {
+  cursor: pointer;
+}
+.active {
+  background-color: #16cbf5;
+  border: 1px solid #999696;
+  color: white;
+}
+
+.active:focus {
+  outline-color: #0d7098a3;
 }
