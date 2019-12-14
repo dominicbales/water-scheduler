@@ -5,6 +5,29 @@ exports[`App component renders App component but big calendar component crashes 
   className="App"
 >
   <Welcome />
+  <div
+    className="app-selection-container"
+  >
+    <h4>
+      Select which VIEW you would like to use
+    </h4>
+    <div
+      className="app-button-container"
+    >
+      <button
+        className="app-button-styles null"
+        onClick={[Function]}
+      >
+        List
+      </button>
+      <button
+        className="app-button-styles active"
+        onClick={[Function]}
+      >
+        Calendar
+      </button>
+    </div>
+  </div>
   <BigCalendarContainer
     sortedPlants={
       Object {
@@ -71,6 +94,29 @@ exports[`App component renders App component without crashing 1`] = `
   className="App"
 >
   <Welcome />
+  <div
+    className="app-selection-container"
+  >
+    <h4>
+      Select which VIEW you would like to use
+    </h4>
+    <div
+      className="app-button-container"
+    >
+      <button
+        className="app-button-styles null"
+        onClick={[Function]}
+      >
+        List
+      </button>
+      <button
+        className="app-button-styles active"
+        onClick={[Function]}
+      >
+        Calendar
+      </button>
+    </div>
+  </div>
   <BigCalendarContainer
     sortedPlants={
       Object {

@@ -7,7 +7,6 @@ import "react-big-calendar/lib/css/react-big-calendar.css";
 const localizer = momentLocalizer(moment);
 
 const BigCalendar = ({ events }) => {
-  console.log("events:", events);
   return (
     <Calendar
       localizer={localizer}

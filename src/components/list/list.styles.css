@@ -1,0 +1,10 @@
+.list-ui-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.list-component-title,
+.list-plant-title,
+.list-plant-dates {
+  text-align: center;
+}

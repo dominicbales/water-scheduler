@@ -1,14 +1,23 @@
-import { extractNumberFromString } from "./plant-helper";
+import { extractNumberFromString } from "../helpers/plant-helper";
 import { addDays, subtractDays } from "./date-helpers";
-const uuidv4 = require("uuid/v4");
 
-export const createCalendarDateObject = sortedPlants => {
+export const createDateArray = data => {
+  let dataArray = [];
+  for (var date of data) {
+    if (!dataArray.includes(date["water_after"])) {
+      dataArray.push(date["water_after"]);
+    }
+  }
+  return dataArray;
+};
+
+export const createDateObject = date => {
   const datesObj = {};
   let dayNum = 0;
   let tempDate = null;
   const endDate = new Date("03/09/2020");
 
-  for (var val in sortedPlants) {
+  for (var val of date) {
     dayNum = extractNumberFromString(val);
     tempDate = new Date("12/16/2019");
 
@@ -57,41 +66,12 @@ export const createCalendarDateObject = sortedPlants => {
   return datesObj;
 };
 
-export const createCalendarEventArray = (plants, dates) => {
-  const events = [];
-  const day7Plants = plants["7 days"];
-  const day7Dates = dates["7 days"];
-  const day2Plants = plants["2 days"];
-  const day2Dates = dates["2 days"];
-  const day3Dates = dates["3 days"];
-  const day3Plants = plants["3 days"];
-  const day14Dates = dates["14 days"];
-  const day14Plants = plants["14 days"];
-
-  events.push(combineDatesAndPlants(day7Dates, day7Plants));
-  events.push(combineDatesAndPlants(day2Dates, day2Plants));
-  events.push(combineDatesAndPlants(day3Dates, day3Plants));
-  events.push(combineDatesAndPlants(day14Dates, day14Plants));
-
-  return events.flat();
-};
-
-const combineDatesAndPlants = (dates, plants) => {
-  const arrayHolder = [];
-  const tempObj = {
-    id: null,
-    title: null,
-    start: null,
-    end: null
-  };
-  for (let i = 0; i < dates.length; i++) {
-    for (let k = 0; k < plants.length; k++) {
-      tempObj.id = uuidv4();
-      tempObj.title = plants[k].name;
-      tempObj.start = new Date(dates[i].year, dates[i].month, dates[i].day);
-      tempObj.end = new Date(dates[i].year, dates[i].month, dates[i].day);
-      arrayHolder.push({ ...tempObj });
+export const mapDatesToPlants = (dates, plants) => {
+  const listArray = [];
+  for (var plant of plants) {
+    if (dates[plant["water_after"]]) {
+      listArray.push({ ...plant, dates: dates[plant["water_after"]] });
     }
   }
-  return arrayHolder;
+  return listArray;
 };
