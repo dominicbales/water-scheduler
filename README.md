@@ -9,6 +9,10 @@ Tandem watering scheduler is a scheduler that helps keeps track of which plants 
 - &#x2714; No plants are watered on Saturdays or Sundays
 - &#x2714; Each plant is watered on its desired schedule or as close as possible, taking into acount weekends
 
+### Demo
+
+You can view the demo of the application here (https://soterox.github.io/water-scheduler/) or run it locally by following the steps below
+
 ### How to Run
 
 In order to run this project you must first make sure you have Yarn installed and after that you must cd into the project directory and run:
