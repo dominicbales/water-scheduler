@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "b694272618bbf315b2cd6ac6364b5225",
+    "revision": "d55ad96f2c8f262201ac2a961e3cee7a",
     "url": "/water-scheduler/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/water-scheduler/static/css/2.25b83785.chunk.css"
   },
   {
-    "revision": "ef106f6b6a452ddf44ad",
+    "revision": "7204db2e69b9363fc127",
     "url": "/water-scheduler/static/css/main.408db6df.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/water-scheduler/static/js/2.cb9cd147.chunk.js.LICENSE"
   },
   {
-    "revision": "ef106f6b6a452ddf44ad",
-    "url": "/water-scheduler/static/js/main.f5ec22a6.chunk.js"
+    "revision": "7204db2e69b9363fc127",
+    "url": "/water-scheduler/static/js/main.7254a2ab.chunk.js"
   },
   {
     "revision": "958465cefe04dd1ea4b1",
