@@ -41,3 +41,4 @@ Just a side note, the components List and BigCalendar logics to determine the pl
 - Created with Create-React-App
 - Used react-big-calendar(https://github.com/intljusticemission/react-big-calendar)
 - Testing with JEST and Enzyme
+- CircleCI
