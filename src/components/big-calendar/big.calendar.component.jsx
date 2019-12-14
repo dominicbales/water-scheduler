@@ -14,7 +14,6 @@ const BigCalendar = ({ events }) => {
       startAccessor="start"
       endAccessor="end"
       style={{ height: 500 }}
-      onSelectEvent={event => console.log("seleced event:", event)}
     />
   );
 };
