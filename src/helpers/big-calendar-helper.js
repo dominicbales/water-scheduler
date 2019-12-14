@@ -74,7 +74,7 @@ export const createCalendarEventArray = (plants, dates) => {
   events.push(combineDatesAndPlants(day3Dates, day3Plants));
   events.push(combineDatesAndPlants(day14Dates, day14Plants));
 
-  return events.flat();
+  return flatten(events);
 };
 
 const combineDatesAndPlants = (dates, plants) => {
@@ -95,4 +95,16 @@ const combineDatesAndPlants = (dates, plants) => {
     }
   }
   return arrayHolder;
+};
+
+export const flatten = arr => {
+  var newArr = [];
+  for (let i = 0; i < arr.length; i++) {
+    if (Array.isArray(arr[i])) {
+      newArr = newArr.concat(flatten(arr[i]));
+    } else {
+      newArr.push(arr[i]);
+    }
+  }
+  return newArr;
 };
