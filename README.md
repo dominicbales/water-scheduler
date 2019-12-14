@@ -27,7 +27,9 @@ One of the biggest problems I faced was adding the date object to an array and t
 
 ### Issues
 
-An issue that this project has is that it's not dynamic, so if you wanted to add new plants or add more weeks to this application it wouldn't work. The good thing is that you only have to make a few changes for it to be dynamic.
+- This project isn't dynamic, so if you wanted to add new plants or add more weeks to this application it wouldn't work. The good thing is that you only have to make a few changes for it to be dynamic.
+
+- Calendar component doesn't render on IOS
 
 ### Additional Features
 
