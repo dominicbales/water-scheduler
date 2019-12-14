@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/water-scheduler/precache-manifest.26dee3c3d29c31ae2940923b42365ade.js"
+  "/water-scheduler/precache-manifest.cce077c76967e187e608f0afa69d880c.js"
 );
 
 self.addEventListener('message', (event) => {
