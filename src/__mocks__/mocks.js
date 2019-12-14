@@ -36,3 +36,26 @@ export const mockSortedPlants = {
 };
 
 export const mockEmptyPlants = {};
+
+export const mockLists = [
+  {
+    name: "Fiddle Leaf Fig",
+    water_after: "7 days",
+    dates: [
+      { month: 11, day: 16, year: 2019 },
+      { month: 11, day: 23, year: 2019 },
+      { month: 11, day: 30, year: 2019 },
+      { month: 0, day: 6, year: 2020 }
+    ]
+  },
+  {
+    name: "test plant",
+    water_after: "14 days",
+    dates: [
+      { month: 11, day: 16, year: 2019 },
+      { month: 11, day: 23, year: 2019 },
+      { month: 11, day: 30, year: 2019 },
+      { month: 0, day: 6, year: 2020 }
+    ]
+  }
+];
