@@ -5,14 +5,11 @@ import BigCalendarContainer from "./components/big-calendar/big.calendar.contain
 import ListContainer from "./components/list/list.container";
 // Import data
 import plants from "./data/data.json";
-// import helpers
-import { sortPlantsByWateringDate } from "./helpers/plant-helper";
 // Import styles
 import "./App.css";
 
 function App() {
   const [openCalendar, setOpenCalendar] = useState(true);
-  const [sortedPlants] = useState(sortPlantsByWateringDate(plants));
 
   const handleListButton = () => {
     if (openCalendar) {
