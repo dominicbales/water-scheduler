@@ -16,4 +16,9 @@ export const sortPlantsByWateringDate = plants => {
   return sortedObj;
 };
 
+/**
+ * @param {str} - string that has a number you want to extract from,
+ *                '14 days' - 14 will be extracted
+ * @return {number}- returns the extracted number
+ */
 export const extractNumberFromString = str => parseInt(str.replace(/\D/g, ""));
