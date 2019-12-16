@@ -34,7 +34,7 @@ export const createCalendarEventArray = (plants, dates) => {
  * @param {array} - array of objects holding plant values
  * @return {array}- returns an array holding the connected data of dates and plants
  */
-const combineDatesAndPlants = (dates, plants) => {
+export const combineDatesAndPlants = (dates, plants) => {
   // 1) init an array to hold our objects
   const arrayHolder = [];
   // 2) create a temporary object to structure our water event,
