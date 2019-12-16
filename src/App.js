@@ -51,7 +51,7 @@ function App() {
         </div>
       </div>
       {openCalendar ? (
-        <BigCalendarContainer sortedPlants={sortedPlants} />
+        <BigCalendarContainer plants={plants} />
       ) : (
         <ListContainer plants={plants} />
       )}
