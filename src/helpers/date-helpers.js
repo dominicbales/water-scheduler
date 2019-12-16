@@ -23,12 +23,10 @@ export const subtractDays = (date, days) => {
 };
 
 /**
- * @param {array} - an array of strings hoding the water_after values
+ * @param {array} - an array of strings holding the water_after values
  * @return {object}- returns an object holding all the dates,
  */
 export const createDateObject = date => {
-  // This function is a modify version of createCalendarDateObject function located in
-  // the big-calendar-helper file
   const datesObj = {};
   let dayNum = 0;
   let tempDate = null;

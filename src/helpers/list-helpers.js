@@ -1,7 +1,7 @@
 /**
+ * @param {object} - an object containing dates
  * @param {array} - an array of objects that is containing plants data
- * @return {array}- returns an array of strings hold the number of days to water after,
- *                  For example, ['14 days', '3 days', '2 days']
+ * @return {array}- returns an array of objects containing all the plants with their dates added onto them
  */
 export const mapDatesToPlants = (dates, plants) => {
   const listArray = [];

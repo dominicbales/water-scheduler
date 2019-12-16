@@ -18,7 +18,6 @@ const BigCalendarContainer = ({ plants, sortedPlants }) => {
         // 3) create a date object where the water_after is the key
         //    and and array of dates are the values
         const dates = await createDateObject(dateArray);
-
         // 4) create an array with all the watering events, using the sortedPlants
         //    and date object
         setEvents(await createCalendarEventArray(sortedPlants, dates));
