@@ -15,7 +15,13 @@ You can view the demo of the application here (https://soterox.github.io/water-s
 
 ### How to Run
 
-In order to run this project you must first make sure you have Yarn installed and after that you must cd into the project directory and run:
+In order to run this project you must first make sure you have Yarn installed and after that you must cd into the project directory and first run:
+
+```js
+yarn install
+```
+
+and after that is completed, run:
 
 ```js
 yarn start
