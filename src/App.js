@@ -3,12 +3,16 @@ import React, { useState } from "react";
 import Welcome from "./components/welcome/welcome.component";
 import BigCalendarContainer from "./components/big-calendar/big.calendar.container";
 import ListContainer from "./components/list/list.container";
+// Import Helpers
+import { sortPlantsByWateringDate } from "./helpers/plant-helper";
+
 // Import data
 import plants from "./data/data.json";
 // Import styles
 import "./App.css";
 
 function App() {
+  const [sortedPlants] = useState(sortPlantsByWateringDate(plants));
   const [openCalendar, setOpenCalendar] = useState(true);
 
   const handleListButton = () => {
@@ -48,7 +52,7 @@ function App() {
         </div>
       </div>
       {openCalendar ? (
-        <BigCalendarContainer plants={plants} />
+        <BigCalendarContainer sortedPlants={sortedPlants} plants={plants} />
       ) : (
         <ListContainer plants={plants} />
       )}

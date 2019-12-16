@@ -3,12 +3,11 @@ import React, { useEffect, useState } from "react";
 import BigCalendar from "./big.calendar.component";
 // import helpers
 import { createCalendarEventArray } from "../../helpers/big-calendar-helper";
-import { sortPlantsByWateringDate } from "../../helpers/plant-helper";
 import { createDateArray, createDateObject } from "../../helpers/date-helpers";
 
-const BigCalendarContainer = ({ plants }) => {
+const BigCalendarContainer = ({ plants, sortedPlants }) => {
   // 1) sort the plants by water_after
-  const [sortedPlants] = useState(sortPlantsByWateringDate(plants));
+
   const [events, setEvents] = useState(null);
   useEffect(() => {
     (async () => {

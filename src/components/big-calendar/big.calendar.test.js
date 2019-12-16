@@ -3,7 +3,7 @@ import { shallow } from "enzyme";
 // Import mocks
 import {
   mockEmptyEvents,
-  mockEvents,
+  mockPlants,
   mockSortedPlants
 } from "../../__mocks__/mocks";
 // Import components
@@ -16,7 +16,12 @@ describe("App component", () => {
 
   beforeEach(() => {
     bigCalendarCrash = <BigCalendar events={mockEmptyEvents} />;
-    wrapper = shallow(<BigCalendarContainer sortedPlants={mockSortedPlants} />);
+    wrapper = shallow(
+      <BigCalendarContainer
+        sortedPlants={mockSortedPlants}
+        plants={mockPlants}
+      />
+    );
   });
 
   // Makes sure BigCalendarContainer component is render and BigCalendar component crashes
