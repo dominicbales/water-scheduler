@@ -6,19 +6,17 @@ import { createCalendarEventArray } from "../../helpers/big-calendar-helper";
 import { createDateArray, createDateObject } from "../../helpers/date-helpers";
 
 const BigCalendarContainer = ({ plants, sortedPlants }) => {
-  // 1) sort the plants by water_after
-
   const [events, setEvents] = useState(null);
   useEffect(() => {
     (async () => {
       try {
-        // 2) create an array of all the dates
+        // 1) create an array of all the dates
         const dateArray = await createDateArray(plants);
 
-        // 3) create a date object where the water_after is the key
+        // 2) create a date object where the water_after is the key
         //    and and array of dates are the values
         const dates = await createDateObject(dateArray);
-        // 4) create an array with all the watering events, using the sortedPlants
+        // 3) create an array with all the watering events, using the sortedPlants
         //    and date object
         setEvents(await createCalendarEventArray(sortedPlants, dates));
       } catch (error) {
