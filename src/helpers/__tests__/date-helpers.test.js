@@ -2,16 +2,16 @@
 import {
   addDays,
   subtractDays,
-  createDateArray,
+  createDaysArray,
   createDateObject
-} from "./date-helpers";
+} from "../date-helpers";
 
 // Import mocks
 import {
   mockSortedPlants,
   mockDatesObject,
   mockPlants
-} from "../__mocks__/mocks";
+} from "../../__mocks__/mocks";
 
 describe("testing date-helper functions", () => {
   it("runs addDays function correctly", () => {
@@ -26,8 +26,8 @@ describe("testing date-helper functions", () => {
     expect(result).toStrictEqual(new Date("12-15-2019"));
   });
 
-  it("runs createDateArray function correctly", () => {
-    const result = createDateArray(mockPlants);
+  it("runs createDaysArray function correctly", () => {
+    const result = createDaysArray(mockPlants);
 
     expect(result).toStrictEqual(["7 days", "14 days", "3 days", "2 days"]);
   });

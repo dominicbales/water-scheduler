@@ -35,10 +35,9 @@ export const createDateObject = date => {
   for (var val of date) {
     dayNum = extractNumberFromString(val);
     tempDate = new Date("12/16/2019");
-
     // 12/16/2016 will be day 1 so we start i at 1
-    for (let i = 1; i <= 85; i += dayNum) {
-      if (i === 1) {
+    for (let i = 0; i <= 84; i += dayNum) {
+      if (i === 0) {
         // sets up the date object on the first day
         // it should only run 1 time
         if (!datesObj[val]) {
@@ -86,7 +85,7 @@ export const createDateObject = date => {
  * @return {array}- returns an array of strings hold the number of days to water after,
  *                  For example, ['14 days', '3 days', '2 days']
  */
-export const createDateArray = data => {
+export const createDaysArray = data => {
   let dataArray = [];
   for (var date of data) {
     if (!dataArray.includes(date["water_after"])) {

@@ -3,10 +3,10 @@ import {
   createCalendarEventArray,
   combineDatesAndPlants,
   flatten
-} from "./big-calendar-helper";
+} from "../big-calendar-helper";
 
 // Import mocks
-import { mockSortedPlants, mockDatesObject } from "../__mocks__/mocks";
+import { mockSortedPlants, mockDatesObject } from "../../__mocks__/mocks";
 
 describe("testing big-calendar-helper functions", () => {
   it("runs createCalendarEventArray function correctly", () => {

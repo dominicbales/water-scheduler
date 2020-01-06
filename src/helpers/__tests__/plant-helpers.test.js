@@ -2,9 +2,9 @@
 import {
   sortPlantsByWateringDate,
   extractNumberFromString
-} from "./plant-helper";
+} from "../plant-helper";
 // Import mocks
-import { mockPlants } from "../__mocks__/mocks";
+import { mockPlants } from "../../__mocks__/mocks";
 
 describe("testing plant-helper functions", () => {
   it("runs sortPlantsByWateringDate function correctly", () => {
