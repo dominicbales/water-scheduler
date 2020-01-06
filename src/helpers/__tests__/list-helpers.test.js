@@ -1,8 +1,8 @@
 // Import functions
-import { mapDatesToPlants } from "./list-helpers";
+import { mapDatesToPlants } from "../list-helpers";
 
 // Import mocks
-import { mockDatesObject, mockPlants } from "../__mocks__/mocks";
+import { mockDatesObject, mockPlants } from "../../__mocks__/mocks";
 
 describe("testing list-helpers functions", () => {
   it("runs mapDatesToPlants function correctly", () => {

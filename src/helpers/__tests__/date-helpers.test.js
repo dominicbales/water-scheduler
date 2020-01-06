@@ -4,14 +4,14 @@ import {
   subtractDays,
   createDateArray,
   createDateObject
-} from "./date-helpers";
+} from "../date-helpers";
 
 // Import mocks
 import {
   mockSortedPlants,
   mockDatesObject,
   mockPlants
-} from "../__mocks__/mocks";
+} from "../../__mocks__/mocks";
 
 describe("testing date-helper functions", () => {
   it("runs addDays function correctly", () => {
